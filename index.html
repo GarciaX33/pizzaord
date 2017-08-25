@@ -1,10 +1,108 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    
-  </body>
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Pizza Planet</title>
+</head>
+<body>
+  <div class="container">
+    <div class="page-header">
+      <h1>Build Your Pizza</h1>
+    </div>
+    <div class="row">
+      <div class="col-md-8" id="order-display">
+        <h3>Place your order here:</h3>
+        <form id="order-form" name="order-form">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Size:</label>
+                <div class="radio">
+                  <label><input name="size" type="radio" value="small">Small $5</label>
+                </div>
+                <div class="radio">
+                  <label><input checked name="size" type="radio" value="medium">Medium $8</label>
+                </div>
+                <div class="radio">
+                  <label><input name="size" type="radio" value="large">Large $10</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Cheese:</label>
+                <div class="radio">
+                  <label><input checked name="cheese" type="radio" value="yes">Yes $1</label>
+                </div>
+                <div class="radio">
+                  <label><input name="cheese" type="radio" value="no">No</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>meats ($2.00 Each):</label>
+                <div class="checkbox">
+                  <label><input name="meats1" type="checkbox" value="steak">Steak</label>
+                </div>
+                <div class="checkbox">
+                  <label><input name="meats1" type="checkbox" value="chicken">Chicken</label>
+                </div>
+                <div class="checkbox">
+                  <label><input name="meats1" type="checkbox" value="sausage">Sausage</label>
+                </div>
+                <div class="checkbox">
+                  <label><input name="meats1" type="checkbox" value="bacon">Bacon</label>
+                </div>
+                <div class="checkbox">
+                  <label><input name="meats1" type="checkbox" value="pepparoni">Pepporoni</label>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Crust:</label>
+                <div class="radio">
+                  <label><input name="crust" type="radio" value="thin">Thin</label>
+                </div>
+                <div class="radio">
+                  <label><input checked name="crust" type="radio" value="pan">Pan $2</label>
+                </div>
+                <div class="radio">
+                  <label><input name="crust" type="radio" value="stuffed">Stuffed $3</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>vegetables ($1.00 Each):</label>
+                <div class="checkbox">
+                  <label><input name="vegetables1" type="checkbox" value="lettuce">Lettuce</label>
+                </div>
+                <div class="checkbox">
+                  <label><input name="vegetables1" type="checkbox" value="pineapple">Pineapple</label>
+                </div>
+                <div class="checkbox">
+                  <label><input name="vegetables1" type="checkbox" value="bellPeppers">Bell Peppers</label>
+                </div>
+                <div class="checkbox">
+                  <label><input name="vegetables1" type="checkbox" value="mushrooms">Mushrooms</label>
+                </div>
+                <div class="checkbox">
+                  <label><input name="vegetables1" type="checkbox" value="tomatoes">Tomatoes</label>
+                </div>
+              </div>
+            </div>
+          </div><button class="btn btn-default" type="submit">Build Your Pizza Planet Pizza</button>
+        </form>
+      </div>
+      <div class="col-md-4">
+        <h3>Your Pizzas:</h3>
+        <ul id="pizzaList"></ul>
+        <div id="pizzaInfo">
+          <h4></h4>
+          <p>vegetables: <span id="vegetables1"></span></p>
+          <p>meats: <span id="meats1"></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
