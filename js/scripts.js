@@ -34,7 +34,7 @@ function Pizza(size, crust, cheese, vegetables, meats) {
   this.cheese = cheese;
   this.vegetables = vegetables;
   this.meats = meats;
-  this.price;
+  this.price = 0;
 }
 
 Pizza.prototype.calculatePrice = function() {
@@ -42,7 +42,7 @@ Pizza.prototype.calculatePrice = function() {
   if (this.size === 'small') {
     this.price += 5;
   } else if (this.size === 'medium') {
-    this.price += 8
+    this.price += 8;
   } else if (this.size === 'large') {
     this.price += 10;
   }
@@ -64,12 +64,7 @@ Pizza.prototype.calculatePrice = function() {
   for (var i = 0; i < this.meats.length; i++) {
     this.price += 2;
   }
-}
+};
 Pizza.prototype.shortDescription = function() {
   return "A " + this.size + " " + this.crust + " pizza: $" + this.price;
-}
-
-var displayPizzaDetails = function() {
-  $('#pizza-details').show();
-  $('#pizza-details h4').text(newPizza.shortDescription());
-}
+};
