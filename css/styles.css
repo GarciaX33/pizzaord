@@ -4,7 +4,7 @@
 
 .pizza {
   cursor: pointer;
-  color: #dd220d;
+  color: black;
 }
 
 .pizza:hover {
@@ -13,6 +13,7 @@
 
 #pizzaDetails {
   display: none;
+  color: black;
 }
 .img-responsive {
     display: block;
@@ -24,5 +25,5 @@
   background-image: url("../img/jtbg.png");
 }
 body {
-  background: linear-gradient(to top, #556270, #ff6b6b);
+  background: linear-gradient(to top, white, #79191d);
 }
