@@ -19,3 +19,10 @@
     height: auto;
     max-width: 100%;
 }
+
+.jumbotron {
+  background-image: url("../img/jtbg.png");
+}
+body {
+  background: linear-gradient(to top, #556270, #ff6b6b);
+}
