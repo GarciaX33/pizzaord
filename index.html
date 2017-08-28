@@ -1,114 +1,114 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <link href="img/logo1.ico" rel="icon" type="image/ico">
-  <script src="js/jquery-3.2.1.js"></script>
-  <script src="js/scripts.js"></script>
-  <title>Pizza Planet</title>
-</head>
-<body>
-  <div class="container">
-    <div class="jumbotron">
-      <div class="container">
-        <div class="img-responsive"><img alt="" src="img/logo.png"></div>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="img/logo1.ico" rel="icon" type="image/ico">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Pizza Planet</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <div class="container">
+          <div class="img-responsive"><img alt="" src="img/logo.png"></div>
+        </div>
       </div>
-    </div>
-    <div class="page-header">
-      <h1>Build Your Pizza</h1>
-    </div>
-    <div class="row">
-      <div class="col-md-8" id="orderDisplay">
-        <h3>Place your order here:</h3>
-        <form id="orderForm" name="orderForm">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="form-group">
-                <label>Size:</label>
-                <div class="radio">
-                  <label><input name="size" type="radio" value="small">Small $5</label>
+      <div class="page-header">
+        <h1>Build Your Pizza</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-8" id="orderDisplay">
+          <h3>Place your order here:</h3>
+          <form id="orderForm" name="orderForm">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Size:</label>
+                  <div class="radio">
+                    <label><input name="size" type="radio" value="small">Small $5</label>
+                  </div>
+                  <div class="radio">
+                    <label><input checked name="size" type="radio" value="medium">Medium $8</label>
+                  </div>
+                  <div class="radio">
+                    <label><input name="size" type="radio" value="large">Large $10</label>
+                  </div>
                 </div>
-                <div class="radio">
-                  <label><input checked name="size" type="radio" value="medium">Medium $8</label>
+                <div class="form-group">
+                  <label>Cheese:</label>
+                  <div class="radio">
+                    <label><input checked name="cheese" type="radio" value="yes">Yes</label>
+                  </div>
+                  <div class="radio">
+                    <label><input name="cheese" type="radio" value="no">No</label>
+                  </div>
                 </div>
-                <div class="radio">
-                  <label><input name="size" type="radio" value="large">Large $10</label>
+                <div class="form-group">
+                  <label>Meats ($2.00 Each):</label>
+                  <div class="checkbox">
+                    <label><input name="meats1" type="checkbox" value="steak">Steak</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="meats1" type="checkbox" value="chicken">Chicken</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="meats1" type="checkbox" value="sausage">Sausage</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="meats1" type="checkbox" value="bacon">Bacon</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="meats1" type="checkbox" value="pepparoni">Pepporoni</label>
+                  </div>
                 </div>
               </div>
-              <div class="form-group">
-                <label>Cheese:</label>
-                <div class="radio">
-                  <label><input checked name="cheese" type="radio" value="yes">Yes</label>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Crust:</label>
+                  <div class="radio">
+                    <label><input name="crust" type="radio" value="thin">Thin</label>
+                  </div>
+                  <div class="radio">
+                    <label><input checked name="crust" type="radio" value="pan">Pan $2</label>
+                  </div>
+                  <div class="radio">
+                    <label><input name="crust" type="radio" value="stuffed">Stuffed $3</label>
+                  </div>
                 </div>
-                <div class="radio">
-                  <label><input name="cheese" type="radio" value="no">No</label>
-                </div>
-              </div>
-              <div class="form-group">
-                <label>Meats ($2.00 Each):</label>
-                <div class="checkbox">
-                  <label><input name="meats1" type="checkbox" value="steak">Steak</label>
-                </div>
-                <div class="checkbox">
-                  <label><input name="meats1" type="checkbox" value="chicken">Chicken</label>
-                </div>
-                <div class="checkbox">
-                  <label><input name="meats1" type="checkbox" value="sausage">Sausage</label>
-                </div>
-                <div class="checkbox">
-                  <label><input name="meats1" type="checkbox" value="bacon">Bacon</label>
-                </div>
-                <div class="checkbox">
-                  <label><input name="meats1" type="checkbox" value="pepparoni">Pepporoni</label>
+                <div class="form-group">
+                  <label>Vegetables ($1.00 Each):</label>
+                  <div class="checkbox">
+                    <label><input name="vegetables1" type="checkbox" value="lettuce">Lettuce</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="vegetables1" type="checkbox" value="pineapple">Pineapple</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="vegetables1" type="checkbox" value="bellPeppers">Bell Peppers</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="vegetables1" type="checkbox" value="mushrooms">Mushrooms</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="vegetables1" type="checkbox" value="tomatoes">Tomatoes</label>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <label>Crust:</label>
-                <div class="radio">
-                  <label><input name="crust" type="radio" value="thin">Thin</label>
-                </div>
-                <div class="radio">
-                  <label><input checked name="crust" type="radio" value="pan">Pan $2</label>
-                </div>
-                <div class="radio">
-                  <label><input name="crust" type="radio" value="stuffed">Stuffed $3</label>
-                </div>
-              </div>
-              <div class="form-group">
-                <label>Vegetables ($1.00 Each):</label>
-                <div class="checkbox">
-                  <label><input name="vegetables1" type="checkbox" value="lettuce">Lettuce</label>
-                </div>
-                <div class="checkbox">
-                  <label><input name="vegetables1" type="checkbox" value="pineapple">Pineapple</label>
-                </div>
-                <div class="checkbox">
-                  <label><input name="vegetables1" type="checkbox" value="bellPeppers">Bell Peppers</label>
-                </div>
-                <div class="checkbox">
-                  <label><input name="vegetables1" type="checkbox" value="mushrooms">Mushrooms</label>
-                </div>
-                <div class="checkbox">
-                  <label><input name="vegetables1" type="checkbox" value="tomatoes">Tomatoes</label>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button class="btn btn-default" type="submit">Build Your Pizza Planet Pizza</button>
-        </form>
-      </div>
-      <div class="col-md-4">
-        <h3>Your Pizzas:</h3>
-        <ul id="pizzaList"></ul>
-        <div id="pizzaInfo"></div>
+            <button class="btn btn-default" type="submit">Build Your Pizza Planet Pizza</button>
+          </form>
+        </div>
+        <div class="col-md-4">
+          <h3>Your Pizzas:</h3>
+          <ul id="pizzaList"></ul>
+          <div id="pizzaInfo"></div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
-    <div class="container"></div>
-  </div>
-</body>
+    <div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+      <div class="container"></div>
+    </div>
+  </body>
 </html>
