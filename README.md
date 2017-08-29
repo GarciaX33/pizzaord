@@ -37,13 +37,13 @@ This is a simple mock site of planet pizza that takes your order and adds up you
   * add meats
 * output:
   * total pizza : adds $2 to total price of pizza for each meat chosen
-* input:
 * can add to price of pizza for every veggie topping added.
+* input:
   * click add vegetables
 * output:
   * total pizza : adds $1 to total price of pizza for each vegetable chosen
-* input:
 * calculates total pizza price after choosing size, meats, and veggies.
+* input:
   * click "build your pizza planet pizza"
 * output:
   * Gives complete total of the selected pizza and toppings.
