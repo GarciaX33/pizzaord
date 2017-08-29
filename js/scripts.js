@@ -52,7 +52,7 @@ Pizza.prototype.calculatePrice = function() {
   for (var i = 0; i < this.vegetables.length; i++) {
     this.price += 1;
   }
-  for (var i < this.meats.length; i++) {
+  for (var i = 0; i < this.meats.length; i++) {
     this.price += 2;
   }
 };
